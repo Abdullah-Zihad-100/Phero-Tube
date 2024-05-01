@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>PHero-tube</title>
+    <style>
+    </style>
+</head>
+<body>
+    <header class="mx-auto container mt-4">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+             
+                <a class="btn btn-ghost text-xl"><img src="Logo.png" alt=""></a>
+            </div>
+            <div class="navbar-center">
+          <button id="sort-by-view-btn" class="btn rounded-md hidden sm:inline bg-gray-200">Sort by view</button>
+            </div>
+            <div class="navbar-end">
+                <a onclick="openBlog()" id="blog-btn" class="btn bg-red-500 text-white">Blog</a>
+            </div>
+        </div>
+    </header>
+
+    <br>
+    <hr class="container mx-auto">
+    <br>
+
+<div class="justify-center flex lg:gap-6 md:gap-3 gap-2">
+    <button onclick="allBtnClick()" id="all-btn" class="btn bg-red-600 text-white px-5">All</button>
+    <button onclick="musicBtnClick()" id="music-btn" class="btn px-9">Music</button>
+    <button onclick="comedyBtnClick()" id="comedy-btn" class="btn px-9">Comedy</button>
+    <button onclick="drawingBtnClick()" id="drawing-btn" class="btn px-9">Drawing</button>
+</div>
+
+
+    <br> <br> <br>
+
+    <main class="container mx-auto">
+
+<section>
+    <div id="card-container" class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 items-center">
+    
+    </div>
+</section>
+
+    </main>
+
+
+
+
+    <script src="tube.js"></script>
+</body>
+</html>
